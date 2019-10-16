@@ -3,20 +3,20 @@ import { Route } from 'react-router-dom'
 import './App.scss';
 import Home from './page/home';
 import Teachers from './page/teachers';
-import Navigation from './component/navigation';
 import Grid from '@material-ui/core/Grid';
+import Sidebar from './layout/sidebar';
 
 
 const App: React.FC = () => {
   return (
-    <div className="w-full h-full App">
-      <Grid container direction ='row' alignItems = 'center' justify ='flex-start'>
-        <Grid xs = {12} sm = {12} md = {12} lg = {12} item>
-          <Navigation />
+    <div className="App h-full">
+      <Grid container direction ='row'  >
+        <Grid item>
+          <Sidebar />
         </Grid>
-        <Grid xs = {12} sm = {12} md = {12} lg = {12} item>
+        <Grid item>
           <Route path="/" exact component={Home} />
-          <Route path="/teachers" exact component={Teachers} />
+          <Route path="/member" exact component={Teachers} />
         </Grid>
       </Grid>
     </div>

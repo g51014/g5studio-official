@@ -1,0 +1,13 @@
+.navigation {
+  flex-direction: column;
+  & > &__Menu {
+    flex-direction: column;
+  }
+  &__Option {
+    display: flex;
+    align-items: center;
+    > span {
+      margin-right: 5px;
+    }
+  }
+}
