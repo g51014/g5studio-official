@@ -1,13 +1,18 @@
 import React from 'react';
 
 type HomeProps = {
-
+    location?
 }
-const Home:React.FunctionComponent<HomeProps> = () => (
-    <>
-        Home
-    </>
-)
+class Home extends React.Component<HomeProps> {
+    render() {
+        console.log(this.props.location.pathname)
+        return (
+            <>
+                Home
+            </>
+        )
+    }
+}
 
 export default Home;
 

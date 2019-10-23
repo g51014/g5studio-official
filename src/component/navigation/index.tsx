@@ -3,16 +3,14 @@ import './style.scss'
 import { Link } from 'react-router-dom'
 import { ROUTES } from '../../config/routes';
 import { Icon, Grid } from '@material-ui/core';
-import Logo from '../../static/images/studio.png';
-import StudioLogo from './logo';
 
 type NavigationProps = {
-
+  path: string
 }
 
-const Navigation: React.ComponentType<NavigationProps> = () => (
+const Navigation: React.ComponentType<NavigationProps> = ({path}) => (
   <Grid container justify='center'>
-    <nav className="navbar navbar-expand-sm navbar-light">
+    <nav className="navbar navbar-expand-sm navbar-dark">
       <button
         className="navbar-toggler"
         type="button"
@@ -29,7 +27,7 @@ const Navigation: React.ComponentType<NavigationProps> = () => (
           {
             Object.keys(ROUTES).map((page: string, index: number) =>
               <li key={index} className="nav-item">
-                <Link className="nav-link navigation__Option" to={ROUTES[page].link}>
+                <Link className={`nav-link navigation__Option ${ROUTES[page].link === path ? "navigation__Focus" : ''}`} to={ROUTES[page].link}>
                   <Icon>{ROUTES[page].icon}</Icon>
                   {ROUTES[page].label}
                 </Link>

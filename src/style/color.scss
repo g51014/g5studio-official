@@ -1,0 +1,144 @@
+/* Base Colors */
+/*
+  To extend these colors please use alternative colors below OR
+  darken(color, amountPercentage) OR
+  lighten(color, amountPercentage) OR
+  saturate(color, amountPercentage) OR
+  desaturate(color, amountPercentage) OR
+  rgba(color, alpha) OR
+  tint(color, amountPercentage) OR
+  shade(color, amountPercentage)
+ */
+$black: #000000;
+$white: #ffffff;
+
+$gray: #ebebeb;
+$red: #ff1744;
+$orange: #ffa05d;
+$royal-blue: #3b70eb;
+$yellow: #ffe205;
+$green: #67d658;
+$teal: #58bfd6;
+$blue: #4299e1;
+$navy-blue: #2c325c;
+$indigo: #465bca;
+$purple: #a0a5d9;
+$pink: #fa4182;
+$turkish-rose: #a17276;
+
+/* Alternative Colors */
+/* Gray */
+$gray-lightest: lighten($gray, 25%);
+$gray-lighter: lighten($gray, 15%);
+$gray-light: lighten($gray, 5%);
+$gray-dark: darken($gray, 5%);
+$gray-darker: darken($gray, 15%);
+$gray-darkest: darken($gray, 25%);
+
+/* Red */
+$red-lightest: lighten($red, 25%);
+$red-lighter: lighten($red, 15%);
+$red-light: lighten($red, 5%);
+$red-dark: darken($red, 5%);
+$red-darker: darken($red, 15%);
+$red-darkest: darken($red, 25%);
+
+/* Orange */
+$orange-lightest: lighten($orange, 25%);
+$orange-lighter: lighten($orange, 15%);
+$orange-light: lighten($orange, 5%);
+$orange-dark: darken($orange, 5%);
+$orange-darker: darken($orange, 15%);
+$orange-darkest: darken($orange, 25%);
+
+/* Yellow */
+$yellow-lightest: lighten($yellow, 25%);
+$yellow-lighter: lighten($yellow, 15%);
+$yellow-light: lighten($yellow, 5%);
+$yellow-dark: darken($yellow, 5%);
+$yellow-darker: darken($yellow, 15%);
+$yellow-darkest: darken($yellow, 25%);
+
+/* Green */
+$green-lightest: lighten($green, 25%);
+$green-lighter: lighten($green, 15%);
+$green-light: lighten($green, 5%);
+$green-dark: darken($green, 5%);
+$green-darker: darken($green, 15%);
+$green-darkest: darken($green, 25%);
+
+/* Teal */
+$teal-lightest: lighten($teal, 25%);
+$teal-lighter: lighten($teal, 15%);
+$teal-light: lighten($teal, 5%);
+$teal-dark: darken($teal, 5%);
+$teal-darker: darken($teal, 15%);
+$teal-darkest: darken($teal, 25%);
+
+/* Blue */
+$blue-lightest: lighten($blue, 25%);
+$blue-lighter: lighten($blue, 15%);
+$blue-light: lighten($blue, 5%);
+$blue-dark: darken($blue, 5%);
+$blue-darker: darken($blue, 15%);
+$blue-darkest: darken($blue, 25%);
+
+/* Navy Blue */
+$navy-blue-lightest: lighten($navy-blue, 25%);
+$navy-blue-lighter: lighten($navy-blue, 15%);
+$navy-blue-light: lighten($navy-blue, 5%);
+$navy-blue-dark: darken($navy-blue, 5%);
+$navy-blue-darker: darken($navy-blue, 15%);
+$navy-blue-darkest: darken($navy-blue, 25%);
+
+/* Indigo */
+$indigo-lightest: lighten($indigo, 25%);
+$indigo-lighter: lighten($indigo, 15%);
+$indigo-light: lighten($indigo, 5%);
+$indigo-dark: darken($indigo, 5%);
+$indigo-darker: darken($indigo, 15%);
+$indigo-darkest: darken($indigo, 25%);
+
+/* Purple */
+$purple-lightest: lighten($purple, 25%);
+$purple-lighter: lighten($purple, 15%);
+$purple-light: lighten($purple, 5%);
+$purple-dark: darken($purple, 5%);
+$purple-darker: darken($purple, 15%);
+$purple-darkest: darken($purple, 25%);
+
+/* Pink */
+$pink-lightest: lighten($pink, 25%);
+$pink-lighter: lighten($pink, 15%);
+$pink-light: lighten($pink, 5%);
+$pink-dark: darken($pink, 5%);
+$pink-darker: darken($pink, 15%);
+$pink-darkest: darken($pink, 25%);
+
+/* Theme Colors */
+
+$bg-dark: #161833;
+$secondary-bg-dark: $navy-blue;
+$secondary-bg-dark-highlight: $navy-blue-light;
+$bg-dark-text: $white;
+
+$bg-light: $purple-lighter;
+$secondary-bg-light: $white;
+$secondary-bg-light-highlight: $purple-lightest;
+$bg-light-text: $gray-darkest;
+$auth-secondary-text: #cccccc;
+
+/* Gradients */
+
+$auth-modal-gradient-background: linear-gradient(
+  150deg,
+  rgba(239, 149, 27, 0.9) 1%,
+  rgba(22, 24, 51, 0.9) 18%,
+  rgba(22, 24, 51, 0.9) 52%,
+  rgba(22, 24, 51, 0.9) 83%,
+  rgba(205, 38, 79, 0.9) 100%
+);
+$modal-gradient-mask: linear-gradient(130deg, rgba(33, 133, 94, 0.9) 1%, $navy-blue 48%, rgba(133, 33, 33, 0.9) 101%);
+$button-gradient-background: linear-gradient(90deg, $orange 3%, $red 100%);
+
+$button-gradient-background: linear-gradient(90deg, $orange 3%, $red 100%);

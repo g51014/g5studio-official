@@ -7,9 +7,8 @@ type LogoProps = {
 }
 
 const StudioLogo: React.ComponentType<LogoProps> = ({ logo, size }) => (
-    <div className='sidebar__Logo'>
-        <img  style={{ width: size }} src={logo} />
-        G5 Studio
+    <div className='sidebar__Logo w-full'>
+        <a href="/"><img style={{ width: size }} src={logo} /></a>
     </div>
 
 

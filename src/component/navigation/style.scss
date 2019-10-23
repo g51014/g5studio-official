@@ -1,7 +1,15 @@
+@import "../../style/color.scss";
+
 .navigation {
   flex-direction: column;
   & > &__Menu {
     flex-direction: column;
+    & > .nav-item :hover {
+      color: $orange;
+    }
+  }
+  &__Focus {
+    color: $orange !important;
   }
   &__Option {
     display: flex;
